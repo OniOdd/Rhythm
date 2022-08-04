@@ -1,40 +1,38 @@
 @font-face {
-  font-family: "Cal Sans";
-  font-display: swap;
-  src: url("../fonts/CalSans-SemiBold.woff2") format("woff2"), url("../fonts/CalSans-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
+	font-family: "Cal Sans";
+	font-display: swap;
+	src: url("../fonts/CalSans-SemiBold.woff2") format("woff2"), url("../fonts/CalSans-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
 }
 
 /* ====== Normalize ====== */
 
 html {
-  -webkit-text-size-adjust: 100%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 62.5%;
-  line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	box-sizing: border-box;
+	font-size: 62.5%;
+	line-height: 1.15;
 }
 
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: inherit;
 }
 
 a {
-  text-decoration: none;
-  background-color: transparent;
+	text-decoration: none;
+	background-color: transparent;
 }
 
 ul,
 ol,
 li {
-  list-style: none;
+	list-style: none;
 }
 
 h1,
@@ -43,114 +41,100 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
-  font-weight: inherit;
+	font-size: inherit;
+	font-weight: inherit;
 }
 
 main {
-  display: block;
+	display: block;
 }
 
 b,
 strong {
-  font-weight: bolder;
+	font-weight: bolder;
 }
 
 img {
-  border-style: none;
-  vertical-align: top;
+	border-style: none;
+	vertical-align: top;
 }
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 /* ====== Main Code ====== */
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  font-size: 1.6rem;
-  color: #666666;
+	font-family: "Poppins", sans-serif;
+	font-weight: normal;
+	font-size: 1.6rem;
+	color: #666666;
 }
 
 .wrapper {
-  min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	position: relative;
 }
 
 [class*=__container] {
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0 15px;
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
 /* ====== Block Header ====== */
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
 }
 
 .header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  min-height: 152px;
+	display: flex;
+	align-items: center;
+	min-height: 152px;
 }
 
 .header__logo {
-  display: inline-block;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 123px;
-  flex: 0 0 123px;
-  margin: 0 131px 0 0;
+	display: inline-block;
+	flex: 0 0 123px;
+	margin: 0 131px 0 0;
 }
 
 .header__logo img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
+/* -------------------------- */
 .menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+	display: flex;
 }
 
 .menu__item:not(:last-child) {
-  margin: 0 5.6rem 0 0;
+	margin: 0 5.6rem 0 0;
 }
 
 .menu__link {
-  font-weight: 500;
-  line-height: 1.5;
-  color: rgba(18, 18, 18, 0.4);
-  -webkit-transition: color 0.3s ease 0s;
-  transition: color 0.3s ease 0s;
+	font-weight: 500;
+	line-height: 1.5;
+	color: #12121266;
+	transition: color .3s ease 0s;
 }
 
 .menu__link:hover {
-  color: #FF6428;
+	color: #FF6428;
 }
 
+/* ====== Bloxk Page ====== */
 .page {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
+	flex: 1 1 auto;
 }
