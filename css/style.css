@@ -110,17 +110,13 @@ body {
 	margin: 0 131px 0 0;
 }
 
-.header__logo img {
-	max-width: 100%;
-}
-
 /* -------------------------- */
 .menu__list {
 	display: flex;
 }
 
 .menu__item:not(:last-child) {
-	margin: 0 5.6rem 0 0;
+	margin: 0 3.5em 0 0;
 }
 
 .menu__link {
@@ -134,7 +130,240 @@ body {
 	color: #FF6428;
 }
 
-/* ====== Bloxk Page ====== */
+/* ====== Block Page ====== */
 .page {
 	flex: 1 1 auto;
+}
+
+/* ====== Section Get-App ====== */
+.get-app {
+	background-color: #fff;
+	padding: 0 0 80px 0;
+}
+
+.get-app__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* ----------------------------- */
+.get-app__article {
+	flex: 0 1 44%;
+	align-self: flex-end;
+	max-width: 469px;
+	margin: 0 0 60px 0;
+}
+
+.get-app__title {
+	font-family: "Cal Sans";
+	font-weight: 600;
+	font-size: 5.6rem;
+	line-height: 1.2;
+	color: #121212;
+}
+
+.get-app__title span {
+	color: #FF6428;
+}
+
+.get-app__title:not(:last-child) {
+	margin: 0 0 .286em 0;
+}
+
+.get-app__text {
+	font-weight: 500;
+	line-height: 1.5;
+	max-width: 39ch;
+}
+
+.get-app__text:not(:last-child) {
+	margin: 0 0 2.063em 0;
+}
+
+.get-app__link {
+	display: flex;
+	align-items: center;
+}
+
+.get-app__btn {
+	display: inline-block;
+	background-color: #FF6428;
+	border-radius: 40px;
+	font-weight: 600;
+	line-height: 1.5;
+	color: #fff;
+	padding: 1.125em 3em;
+	transition: background-color .3s ease 0s;
+}
+
+.get-app__btn:hover {
+	background-color: #c04f22;
+}
+
+.get-app__btn:not(:last-child) {
+	margin: 0 40px 0 0;
+}
+
+.get-app__icons {
+	display: flex;
+	align-items: center;
+}
+
+.get-app__google {
+	display: inline-block;
+	width: 27px;
+	height: 30px;
+}
+
+.get-app__google:not(:last-child) {
+	margin: 0 28px 0 0;
+}
+
+.get-app__apple {
+	display: inline-block;
+	width: 27px;
+	height: 33px;
+}
+
+/* ----------------------------- */
+.get-app__decoration {
+	flex: 0 1 56%;
+	max-width: 672px;
+}
+
+.get-app__picture {
+	position: relative;
+	padding-bottom: 87.2%;
+	transform: translate(120px, 0);
+}
+
+.get-app__image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background: linear-gradient(180deg, #FF8C60 0%, #FF5B1C 100%);
+	border-radius: 0 0 151px 360px;
+	backdrop-filter: blur(40px);
+}
+
+.get-app__picture::before {
+	content: "";
+	background: url("../img/get-app/decor-2.svg") 0 0 no-repeat;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 52%;
+	bottom: -7%;
+	z-index: 2;
+}
+
+/* ====== TODO: Media Queries ====== */
+@media (max-width: 75em) {
+	.header__container {
+		min-height: 110px;
+	}
+
+	.get-app__title {
+		font-size: calc(3rem + 26 * ((100vw - 320px) / (1230 - 320)));
+	}
+}
+
+/* ---------------------------- */
+@media (max-width: 68.750em) {
+	[class*="__container"] {
+		max-width: 1000px;
+	}
+
+	.header__logo {
+		margin: 0 50px 0 0;
+	}
+
+	.menu__item:not(:last-child) {
+		margin: 0 3.125em 0 0;
+	}
+}
+
+/* ---------------------------- */
+@media (max-width: 62.500em) {
+	[class*="__container"] {
+		max-width: 900px;
+	}
+
+	.get-app__article {
+		padding: 100px 0 0 0;
+	}
+}
+
+/* ---------------------------- */
+@media (max-width: 56.250em) {
+	.header__container {
+		min-height: 80px;
+	}
+}
+
+/* ---------------------------- */
+@media (max-width: 55.438em) {
+	[class*="__container"] {
+		max-width: 768px;
+	}
+
+	.header__container {
+		justify-content: space-between;
+	}
+
+	.menu__item:not(:last-child) {
+		margin: 0 3.5em 0 0;
+	}
+
+	.get-app__article {
+		flex: 1 1 auto;
+	}
+
+	.get-app__decoration {
+		display: none;
+	}
+}
+
+/* ---------------------------- */
+@media (max-width: 47.999em) {
+	[class*="__container"] {
+		max-width: none;
+	}
+}
+
+/* ---------------------------- */
+@media (max-width: 32.125em) {
+	.header__logo {
+		flex: 0 0 28px;
+		overflow: hidden;
+	}
+}
+
+/* ---------------------------- */
+@media (max-width: 26.125em) {
+	.header__logo {
+		margin: 0 20px 0 0;
+	}
+
+	.menu__item:not(:last-child) {
+		margin: 0 1.4em 0 0;
+	}
+}
+
+/* ---------------------------- */
+@media (max-width: 22.250em) {
+	.get-app__btn {
+		padding: 1.125em 2.6em;
+	}
+
+	.get-app__btn:not(:last-child) {
+		margin: 0 20px 0 0;
+	}
+
+	.get-app__google:not(:last-child) {
+		margin: 0 20px 0 0;
+	}
 }
