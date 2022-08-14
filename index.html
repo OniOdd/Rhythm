@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css?_v=1.0">
 	<title>Rhythm</title>
 </head>
@@ -154,33 +155,39 @@
 								</div>
 							</a>
 						</li>
-						<a href="#" class="categories__item">
-							<div class="categories__picture">
-								<picture class="categories__img">
-									<source srcset="img/categories/electric.webp" type="image/webp">
-									<img src="img/categories/electric.jpg" alt="Electric category">
-								</picture>
-								<h3 class="categories__name">Electric</h3>
-							</div>
-						</a>
-						<a href="#" class="categories__item">
-							<div class="categories__picture">
-								<picture class="categories__img">
-									<source srcset="img/categories/basses.webp" type="image/webp">
-									<img src="img/categories/basses.jpg" alt="Basses category">
-								</picture>
-								<h3 class="categories__name">Basses</h3>
-							</div>
-						</a>
-						<a href="#" class="categories__item">
-							<div class="categories__picture">
-								<picture class="categories__img">
-									<source srcset="img/categories/collections.webp" type="image/webp">
-									<img src="img/categories/collections.jpg" alt="Collections category">
-								</picture>
-								<h3 class="categories__name">Collections</h3>
-							</div>
-						</a>
+						<li class="categories__column">
+							<a href="#" class="categories__item">
+								<div class="categories__picture">
+									<picture class="categories__img">
+										<source srcset="img/categories/electric.webp" type="image/webp">
+										<img src="img/categories/electric.jpg" alt="Electric category">
+									</picture>
+									<h3 class="categories__name">Electric</h3>
+								</div>
+							</a>
+						</li>
+						<li class="categories__column">
+							<a href="#" class="categories__item">
+								<div class="categories__picture">
+									<picture class="categories__img">
+										<source srcset="img/categories/basses.webp" type="image/webp">
+										<img src="img/categories/basses.jpg" alt="Basses category">
+									</picture>
+									<h3 class="categories__name">Basses</h3>
+								</div>
+							</a>
+						</li>
+						<li class="categories__column">
+							<a href="#" class="categories__item">
+								<div class="categories__picture">
+									<picture class="categories__img">
+										<source srcset="img/categories/collections.webp" type="image/webp">
+										<img src="img/categories/collections.jpg" alt="Collections category">
+									</picture>
+									<h3 class="categories__name">Collections</h3>
+								</div>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</section>
@@ -204,32 +211,90 @@
 					<h2 class="why-try__title title-secondary title-secondary--white">Why try <span>Rhythm?</span></h2>
 					<ul class="why-try__columns">
 						<li class="why-try__item">
-							<div class="why-try__icon">
-								<img src="img/why-try/browsing.svg" alt="Smooth Browsing icon">
-							</div>
+							<svg class="why-try__icon">
+								<use xlink:href="img/why-try/sprite.svg#browsing"></use>
+							</svg>
 							<h3 class="why-try__name">Smooth Browsing</h3>
 							<span class="why-try__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
 						</li>
 						<li class="why-try__item">
-							<div class="why-try__icon">
-								<img src="img/why-try/delivery.svg" alt="Easy Delivery icon">
-							</div>
+							<svg class="why-try__icon">
+								<use xlink:href="img/why-try/sprite.svg#delivery"></use>
+							</svg>
 							<h3 class="why-try__name">Easy Delivery</h3>
 							<span class="why-try__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
 						</li>
 						<li class="why-try__item">
-							<div class="why-try__icon">
-								<img src="img/why-try/payments.svg" alt="Swift Payments icon">
-							</div>
+							<svg class="why-try__icon">
+								<use xlink:href="img/why-try/sprite.svg#payments"></use>
+							</svg>
 							<h3 class="why-try__name">Swift Payments</h3>
 							<span class="why-try__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
 						</li>
 					</ul>
 				</div>
 			</section>
+			<section class="reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title title-secondary">What our <span>customer's</span> say</h2>
+					<div class="reviews__swiper slider swiper">
+						<div class="slider__wrapper swiper-wrapper">
+							<div class="slider__block swiper-slide">
+								<ul class="slider__photo-wrapper">
+									<li class="slider__photo-container">
+										<picture class="slider__photo">
+											<source srcset="img/reviews/customer-01.webp">
+											<img src="img/reviews/customer-01.jpg" alt="">
+										</picture>
+									</li>
+								</ul>
+								<div class="slider__review">
+									<div class="slider__text">
+										<p>
+											“The Quality and Delivery is always on time, being a professional guitarist myself I
+											love
+											the
+											customer service the brand
+											provides, highly recommend Rhythm anytime.”
+										</p>
+									</div>
+									<span class="slider__name">Ryan Wels</span>
+									<span class="slider__profession">PROFESSIONAL GUITARIST</span>
+									<div class="slider__pagination swiper-pagination"></div>
+								</div>
+							</div>
+							<div class="slider__block swiper-slide">
+								<ul class="slider__photo-wrapper">
+									<li class="slider__photo-container">
+										<picture class="slider__photo">
+											<source srcset="img/reviews/customer-02.webp">
+											<img src="img/reviews/customer-02.jpg" alt="">
+										</picture>
+									</li>
+								</ul>
+								<div class="slider__review">
+									<div class="slider__text">
+										<p>
+											“The Quality and Delivery is always on time, being a professional guitarist myself I
+											love
+											the
+											customer service the brand
+											provides, highly recommend Rhythm anytime.”
+										</p>
+									</div>
+									<span class="slider__name">Rachel Wyres</span>
+									<span class="slider__profession">PROFESSIONAL GUITARIST</span>
+									<div class="slider__pagination swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer"></footer>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
