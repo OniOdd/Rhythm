@@ -771,6 +771,10 @@ body {
 	.slider__profession {
 		font-size: calc(1.4rem + 4 * ((100vw - 320px) / (1440 - 320)));
 	}
+
+	.favorite__title {
+		font-size: calc(3rem + 18 * ((100vw - 320px) / (1440 - 320)));
+	}
 }
 
 /* ---------------------------- */
