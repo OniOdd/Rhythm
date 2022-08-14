@@ -18,11 +18,6 @@ if (slider) {
 			onlyInViewport: true,
 		},
 
-		mousewheel: {
-			sensitivity: 1,
-			eventsTarget: '.slider',
-		},
-
 		autoplay: {
 			delay: 4000,
 			stopOnLastSlide: false,
