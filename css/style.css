@@ -1144,6 +1144,10 @@ body {
 	.favorite__icons {
 		justify-content: center;
 	}
+
+	.footer__title {
+		text-align: center;
+	}
 }
 
 /* ---------------------------- */
